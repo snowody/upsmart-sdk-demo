@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com.alibaba.fastjson.serializer
 upsmart.data.sdk.api
 upsmart.data.sdk.auth.api
@@ -35,3 +36,6 @@ upsmart.data.sdk.valid.exception
 upsmart.data.sdk.valid.factory
 upsmart.data.sdk.valid.validator
 upsmart.data.sdk.verify.api
+=======
+com.unionpaysmart.apicall
+>>>>>>> init project
