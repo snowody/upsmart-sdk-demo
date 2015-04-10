@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 com.alibaba.fastjson.serializer
 upsmart.data.sdk.api
 upsmart.data.sdk.auth.api
@@ -39,3 +40,6 @@ upsmart.data.sdk.verify.api
 =======
 com.unionpaysmart.apicall
 >>>>>>> init project
+=======
+com.unionpaysmart.apicall
+>>>>>>> demo_github/dev
