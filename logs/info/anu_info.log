@@ -1,0 +1,2 @@
+2015-05-28 14:26:36,825 INFO [main] com.unionpaysmart.apicall.ApiCallTest : {"data":[],"resCode":"0000","resMsg":"提交成功","sign":"a3cced6dea1f07ecd86cec17d27c9e9d"}
+2015-05-28 14:27:26,888 INFO [main] com.unionpaysmart.apicall.ApiCallTest : result : {"resCode":"0002","resMsg":"查询失败,卡号[5201520000009998, 5201520000009997]认证失败","sign":"938f4ce6d7df10c0dff8fb5e00d3b7b1","totalCount":0,"totalExpense":0,"totalReceipt":0}

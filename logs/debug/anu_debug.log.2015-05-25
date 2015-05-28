@@ -1,0 +1,300 @@
+2015-05-25 17:54:21,615 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 开始请求接口：/bills/card
+2015-05-25 17:54:21,621 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: type validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:21,623 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator NotBlank
+2015-05-25 17:54:21,630 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: card validator: [@com.unionpaysmart.data.sdk.valid.annotation.Card(message=字段 {field} 不是有效的银行卡), @com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:21,631 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Card
+2015-05-25 17:54:21,632 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:21,632 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: name validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:21,632 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:21,634 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: mobile validator: [@com.unionpaysmart.data.sdk.valid.annotation.Mobile(message=字段 {field} 不是有效的手机号码)]
+2015-05-25 17:54:21,635 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Mobile
+2015-05-25 17:54:21,638 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: cid validator: [@com.unionpaysmart.data.sdk.valid.annotation.IDCard(message=字段 {field} 不是有效的身份证号码)]
+2015-05-25 17:54:21,638 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator IDCard
+2015-05-25 17:54:21,639 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: beginDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:21,639 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:21,639 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: endDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:21,639 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:21,717 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 参数转换为字符串：{"beginDate":"1970-01-01","card":["5201520000009998","5201520000009997"],"cid":"321045198912121235","endDate":"2015-05-25","mobile":"13612456523","name":"sss","type":1}
+2015-05-25 17:54:21,729 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 字典排序后的字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:54:21,737 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 签名字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:54:21,929 DEBUG [main] org.apache.http.client.protocol.RequestAddCookies : CookieSpec selected: best-match
+2015-05-25 17:54:21,937 DEBUG [main] org.apache.http.client.protocol.RequestAuthCache : Auth cache not set in the context
+2015-05-25 17:54:21,938 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2015-05-25 17:54:21,951 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 17:54:21,952 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Opening connection {s}->https://222.72.248.198:443
+2015-05-25 17:54:21,954 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connecting to /222.72.248.198:443
+2015-05-25 17:54:22,139 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connection established 192.168.88.170:43529<->222.72.248.198:443
+2015-05-25 17:54:22,139 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Executing request GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:54:22,139 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Target auth state: UNCHALLENGED
+2015-05-25 17:54:22,140 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Proxy auth state: UNCHALLENGED
+2015-05-25 17:54:22,141 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:54:22,141 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Host: 222.72.248.198
+2015-05-25 17:54:22,141 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Connection: Keep-Alive
+2015-05-25 17:54:22,141 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2015-05-25 17:54:22,141 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2015-05-25 17:54:22,141 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1[\r][\n]"
+2015-05-25 17:54:22,141 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Host: 222.72.248.198[\r][\n]"
+2015-05-25 17:54:22,141 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2015-05-25 17:54:22,141 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2015-05-25 17:54:22,142 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-25 17:54:22,142 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Server: nginx/1.6.2[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Date: Mon, 25 May 2015 09:54:22 GMT[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "a5[\r][\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "{[\n]"
+2015-05-25 17:54:22,205 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resCode" : "0002",[\n]"
+2015-05-25 17:54:22,206 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resMsg" : "[0xe6][0x9f][0xa5][0xe8][0xaf][0xa2][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5],[0xe5][0x8d][0xa1][0xe5][0x8f][0xb7][[\"5201520000009998\", \"5201520000009997\"]][0xe8][0xae][0xa4][0xe8][0xaf][0x81][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5]",[\n]"
+2015-05-25 17:54:22,206 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"[\n]"
+2015-05-25 17:54:22,206 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "}[\r][\n]"
+2015-05-25 17:54:22,206 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "0[\r][\n]"
+2015-05-25 17:54:22,206 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << HTTP/1.1 200 OK
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Server: nginx/1.6.2
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Date: Mon, 25 May 2015 09:54:22 GMT
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Transfer-Encoding: chunked
+2015-05-25 17:54:22,209 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Connection: keep-alive
+2015-05-25 17:54:22,215 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Connection can be kept alive indefinitely
+2015-05-25 17:54:22,220 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://222.72.248.198:443] can be kept alive indefinitely
+2015-05-25 17:54:22,220 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 17:54:22,220 DEBUG [main] com.unionpaysmart.data.sdk.util.http.RequestUtil : request: https://222.72.248.198/bills/card response :{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 17:54:22,220 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 接口返回值：{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 17:54:22,233 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 结束请求
+2015-05-25 17:54:45,541 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 开始请求接口：/bills/card
+2015-05-25 17:54:45,548 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: type validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:45,550 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator NotBlank
+2015-05-25 17:54:45,557 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: card validator: [@com.unionpaysmart.data.sdk.valid.annotation.Card(message=字段 {field} 不是有效的银行卡), @com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:45,558 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Card
+2015-05-25 17:54:45,559 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:45,559 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: name validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:45,559 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:45,562 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: mobile validator: [@com.unionpaysmart.data.sdk.valid.annotation.Mobile(message=字段 {field} 不是有效的手机号码)]
+2015-05-25 17:54:45,562 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Mobile
+2015-05-25 17:54:45,565 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: cid validator: [@com.unionpaysmart.data.sdk.valid.annotation.IDCard(message=字段 {field} 不是有效的身份证号码)]
+2015-05-25 17:54:45,565 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator IDCard
+2015-05-25 17:54:45,566 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: beginDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:45,566 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:45,566 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: endDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:54:45,566 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:54:45,645 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 参数转换为字符串：{"beginDate":"1970-01-01","card":["5201520000009998","5201520000009997"],"cid":"321045198912121235","endDate":"2015-05-25","mobile":"13612456523","name":"sss","type":1}
+2015-05-25 17:54:45,657 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 字典排序后的字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:54:45,665 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 签名字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:54:45,859 DEBUG [main] org.apache.http.client.protocol.RequestAddCookies : CookieSpec selected: best-match
+2015-05-25 17:54:45,867 DEBUG [main] org.apache.http.client.protocol.RequestAuthCache : Auth cache not set in the context
+2015-05-25 17:54:45,868 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2015-05-25 17:54:45,881 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 17:54:45,882 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Opening connection {s}->https://222.72.248.198:443
+2015-05-25 17:54:45,884 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connecting to /222.72.248.198:443
+2015-05-25 17:54:46,045 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connection established 192.168.88.170:43532<->222.72.248.198:443
+2015-05-25 17:54:46,046 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Executing request GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:54:46,046 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Target auth state: UNCHALLENGED
+2015-05-25 17:54:46,046 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Proxy auth state: UNCHALLENGED
+2015-05-25 17:54:46,047 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:54:46,047 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Host: 222.72.248.198
+2015-05-25 17:54:46,047 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Connection: Keep-Alive
+2015-05-25 17:54:46,047 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2015-05-25 17:54:46,048 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1[\r][\n]"
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Host: 222.72.248.198[\r][\n]"
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-25 17:54:46,048 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "[\r][\n]"
+2015-05-25 17:54:46,117 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Server: nginx/1.6.2[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Date: Mon, 25 May 2015 09:54:46 GMT[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "a5[\r][\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "{[\n]"
+2015-05-25 17:54:46,118 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resCode" : "0002",[\n]"
+2015-05-25 17:54:46,119 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resMsg" : "[0xe6][0x9f][0xa5][0xe8][0xaf][0xa2][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5],[0xe5][0x8d][0xa1][0xe5][0x8f][0xb7][[\"5201520000009998\", \"5201520000009997\"]][0xe8][0xae][0xa4][0xe8][0xaf][0x81][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5]",[\n]"
+2015-05-25 17:54:46,119 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"[\n]"
+2015-05-25 17:54:46,119 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "}[\r][\n]"
+2015-05-25 17:54:46,119 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "0[\r][\n]"
+2015-05-25 17:54:46,119 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:54:46,122 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << HTTP/1.1 200 OK
+2015-05-25 17:54:46,122 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Server: nginx/1.6.2
+2015-05-25 17:54:46,122 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Date: Mon, 25 May 2015 09:54:46 GMT
+2015-05-25 17:54:46,122 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+2015-05-25 17:54:46,122 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Transfer-Encoding: chunked
+2015-05-25 17:54:46,123 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Connection: keep-alive
+2015-05-25 17:54:46,125 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Connection can be kept alive indefinitely
+2015-05-25 17:54:46,128 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://222.72.248.198:443] can be kept alive indefinitely
+2015-05-25 17:54:46,129 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 17:54:46,129 DEBUG [main] com.unionpaysmart.data.sdk.util.http.RequestUtil : request: https://222.72.248.198/bills/card response :{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 17:54:46,129 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 接口返回值：{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 17:54:46,142 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 结束请求
+2015-05-25 17:55:31,188 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 开始请求接口：/bills/card
+2015-05-25 17:57:21,073 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: type validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:57:21,078 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator NotBlank
+2015-05-25 17:57:21,099 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: card validator: [@com.unionpaysmart.data.sdk.valid.annotation.Card(message=字段 {field} 不是有效的银行卡), @com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:57:21,102 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Card
+2015-05-25 17:57:21,102 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:57:21,103 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: name validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:57:21,103 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:57:21,111 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: mobile validator: [@com.unionpaysmart.data.sdk.valid.annotation.Mobile(message=字段 {field} 不是有效的手机号码)]
+2015-05-25 17:57:21,112 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Mobile
+2015-05-25 17:57:21,120 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: cid validator: [@com.unionpaysmart.data.sdk.valid.annotation.IDCard(message=字段 {field} 不是有效的身份证号码)]
+2015-05-25 17:57:21,121 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator IDCard
+2015-05-25 17:57:21,122 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: beginDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:57:21,122 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:57:21,123 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: endDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 17:57:21,124 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 17:57:45,884 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 参数转换为字符串：{"beginDate":"1970-01-01","card":["5201520000009998","5201520000009997"],"cid":"321045198912121235","endDate":"2015-05-25","mobile":"13612456523","name":"sss","type":1}
+2015-05-25 17:58:07,794 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 字典排序后的字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:58:07,811 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 签名字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 17:59:23,797 DEBUG [main] org.apache.http.client.protocol.RequestAddCookies : CookieSpec selected: best-match
+2015-05-25 17:59:23,823 DEBUG [main] org.apache.http.client.protocol.RequestAuthCache : Auth cache not set in the context
+2015-05-25 17:59:23,826 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2015-05-25 17:59:23,866 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 17:59:23,870 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Opening connection {s}->https://222.72.248.198:443
+2015-05-25 17:59:23,874 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connecting to /222.72.248.198:443
+2015-05-25 17:59:24,468 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connection established 192.168.88.170:43541<->222.72.248.198:443
+2015-05-25 17:59:24,469 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Executing request GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:59:24,469 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Target auth state: UNCHALLENGED
+2015-05-25 17:59:24,471 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Proxy auth state: UNCHALLENGED
+2015-05-25 17:59:24,474 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 17:59:24,474 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Host: 222.72.248.198
+2015-05-25 17:59:24,474 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Connection: Keep-Alive
+2015-05-25 17:59:24,475 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2015-05-25 17:59:24,475 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2015-05-25 17:59:24,475 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1[\r][\n]"
+2015-05-25 17:59:24,476 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Host: 222.72.248.198[\r][\n]"
+2015-05-25 17:59:24,476 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2015-05-25 17:59:24,476 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2015-05-25 17:59:24,476 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-25 17:59:24,477 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "[\r][\n]"
+2015-05-25 17:59:24,550 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2015-05-25 17:59:24,550 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Server: nginx/1.6.2[\r][\n]"
+2015-05-25 17:59:24,551 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Date: Mon, 25 May 2015 09:59:25 GMT[\r][\n]"
+2015-05-25 17:59:24,551 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2015-05-25 17:59:24,551 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2015-05-25 17:59:24,551 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2015-05-25 17:59:24,552 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:59:24,552 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "a5[\r][\n]"
+2015-05-25 17:59:24,552 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "{[\n]"
+2015-05-25 17:59:24,552 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resCode" : "0002",[\n]"
+2015-05-25 17:59:24,553 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resMsg" : "[0xe6][0x9f][0xa5][0xe8][0xaf][0xa2][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5],[0xe5][0x8d][0xa1][0xe5][0x8f][0xb7][[\"5201520000009998\", \"5201520000009997\"]][0xe8][0xae][0xa4][0xe8][0xaf][0x81][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5]",[\n]"
+2015-05-25 17:59:24,553 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"[\n]"
+2015-05-25 17:59:24,553 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "}[\r][\n]"
+2015-05-25 17:59:24,554 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "0[\r][\n]"
+2015-05-25 17:59:24,554 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 17:59:24,560 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << HTTP/1.1 200 OK
+2015-05-25 17:59:24,560 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Server: nginx/1.6.2
+2015-05-25 17:59:24,561 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Date: Mon, 25 May 2015 09:59:25 GMT
+2015-05-25 17:59:24,561 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+2015-05-25 17:59:24,561 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Transfer-Encoding: chunked
+2015-05-25 17:59:24,561 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Connection: keep-alive
+2015-05-25 17:59:24,570 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Connection can be kept alive indefinitely
+2015-05-25 17:59:32,524 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://222.72.248.198:443] can be kept alive indefinitely
+2015-05-25 17:59:32,524 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 18:00:52,431 DEBUG [main] com.unionpaysmart.data.sdk.util.http.RequestUtil : request: https://222.72.248.198/bills/card response :{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 18:00:55,619 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 接口返回值：{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 18:01:37,492 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 结束请求
+2015-05-25 19:41:45,485 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 开始请求接口：/bills/card
+2015-05-25 19:42:13,984 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: type validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 19:42:13,988 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator NotBlank
+2015-05-25 19:42:14,010 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: card validator: [@com.unionpaysmart.data.sdk.valid.annotation.Card(message=字段 {field} 不是有效的银行卡), @com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 19:42:14,012 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Card
+2015-05-25 19:42:14,013 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 19:42:14,014 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: name validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 19:42:14,014 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 19:42:14,022 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: mobile validator: [@com.unionpaysmart.data.sdk.valid.annotation.Mobile(message=字段 {field} 不是有效的手机号码)]
+2015-05-25 19:42:14,023 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator Mobile
+2015-05-25 19:42:14,030 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: cid validator: [@com.unionpaysmart.data.sdk.valid.annotation.IDCard(message=字段 {field} 不是有效的身份证号码)]
+2015-05-25 19:42:14,032 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : instance validator IDCard
+2015-05-25 19:42:14,033 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: beginDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 19:42:14,033 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 19:42:14,034 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorFactory : valid field: endDate validator: [@com.unionpaysmart.data.sdk.valid.annotation.NotBlank(message=字段 {field} 不能为空)]
+2015-05-25 19:42:14,034 DEBUG [main] com.unionpaysmart.data.sdk.valid.factory.ConstraintValidatorCache : get validator NotBlankfrom cache
+2015-05-25 19:43:04,246 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 参数转换为字符串：{"beginDate":"1970-01-01","card":["5201520000009998","5201520000009997"],"cid":"321045198912121235","endDate":"2015-05-25","mobile":"13612456523","name":"sss","type":1}
+2015-05-25 19:43:37,248 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 字典排序后的字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 19:43:37,266 DEBUG [main] com.unionpaysmart.data.sdk.util.SignUtil : 签名字符串：account002beginDate1970-01-01card["5201520000009998","5201520000009997"]cid321045198912121235endDate2015-05-25mobile13612456523namessstype1002
+2015-05-25 19:43:49,136 DEBUG [main] org.apache.http.client.protocol.RequestAddCookies : CookieSpec selected: best-match
+2015-05-25 19:43:49,145 DEBUG [main] org.apache.http.client.protocol.RequestAuthCache : Auth cache not set in the context
+2015-05-25 19:43:49,147 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection request: [route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2015-05-25 19:43:49,167 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection leased: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 19:43:49,171 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Opening connection {s}->https://222.72.248.198:443
+2015-05-25 19:43:49,174 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connecting to /222.72.248.198:443
+2015-05-25 19:43:49,383 DEBUG [main] org.apache.http.impl.conn.HttpClientConnectionOperator : Connection established 192.168.88.170:43992<->222.72.248.198:443
+2015-05-25 19:43:49,384 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Executing request GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 19:43:49,384 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Target auth state: UNCHALLENGED
+2015-05-25 19:43:49,384 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Proxy auth state: UNCHALLENGED
+2015-05-25 19:43:49,386 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1
+2015-05-25 19:43:49,386 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Host: 222.72.248.198
+2015-05-25 19:43:49,386 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Connection: Keep-Alive
+2015-05-25 19:43:49,386 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> User-Agent: Apache-HttpClient/4.3.6 (java 1.5)
+2015-05-25 19:43:49,386 DEBUG [main]               org.apache.http.headers : http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "GET /bills/card?sign=6685885CBBD8AF7D9D4A18B2E3377312&name=sss&account=002&card=%5B%225201520000009998%22%2C%225201520000009997%22%5D&endDate=2015-05-25&type=1&beginDate=1970-01-01&cid=321045198912121235&mobile=13612456523 HTTP/1.1[\r][\n]"
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Host: 222.72.248.198[\r][\n]"
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.3.6 (java 1.5)[\r][\n]"
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2015-05-25 19:43:49,386 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 >> "[\r][\n]"
+2015-05-25 19:43:49,454 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2015-05-25 19:43:49,454 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Server: nginx/1.6.2[\r][\n]"
+2015-05-25 19:43:49,454 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Date: Mon, 25 May 2015 11:43:50 GMT[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "a5[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "{[\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resCode" : "0002",[\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "resMsg" : "[0xe6][0x9f][0xa5][0xe8][0xaf][0xa2][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5],[0xe5][0x8d][0xa1][0xe5][0x8f][0xb7][[\"5201520000009998\", \"5201520000009997\"]][0xe8][0xae][0xa4][0xe8][0xaf][0x81][0xe5][0xa4][0xb1][0xe8][0xb4][0xa5]",[\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"[\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "}[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "0[\r][\n]"
+2015-05-25 19:43:49,455 DEBUG [main]                  org.apache.http.wire : http-outgoing-0 << "[\r][\n]"
+2015-05-25 19:43:49,457 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << HTTP/1.1 200 OK
+2015-05-25 19:43:49,457 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Server: nginx/1.6.2
+2015-05-25 19:43:49,458 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Date: Mon, 25 May 2015 11:43:50 GMT
+2015-05-25 19:43:49,458 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+2015-05-25 19:43:49,458 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Transfer-Encoding: chunked
+2015-05-25 19:43:49,458 DEBUG [main]               org.apache.http.headers : http-outgoing-0 << Connection: keep-alive
+2015-05-25 19:43:49,461 DEBUG [main] org.apache.http.impl.execchain.MainClientExec : Connection can be kept alive indefinitely
+2015-05-25 19:43:49,465 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection [id: 0][route: {s}->https://222.72.248.198:443] can be kept alive indefinitely
+2015-05-25 19:43:49,465 DEBUG [main] org.apache.http.impl.conn.PoolingHttpClientConnectionManager : Connection released: [id: 0][route: {s}->https://222.72.248.198:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2015-05-25 19:43:49,465 DEBUG [main] com.unionpaysmart.data.sdk.util.http.RequestUtil : request: https://222.72.248.198/bills/card response :{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 19:43:49,465 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 接口返回值：{
+  "resCode" : "0002",
+  "resMsg" : "查询失败,卡号[[\"5201520000009998\", \"5201520000009997\"]]认证失败",
+  "sign" : "24a7a5d1acbeac8cca814be42e732a0e"
+}
+2015-05-25 19:43:49,479 DEBUG [main] com.unionpaysmart.data.sdk.api.DataApi : 结束请求
