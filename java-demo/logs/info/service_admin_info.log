@@ -1,0 +1,2 @@
+2015-06-06 12:58:05,295 INFO [main]                  sdk.test.ApiCallTest : {"resCode":"1000","resMsg":"账户不存在或被禁用","sign":"f99119594a91157820da74ca53b48ff7","totalReceipt":0,"totalExpense":0,"totalCount":0,"fileUuid":null,"transactionsInfo":null}
+2015-06-06 12:58:05,334 INFO [main]                  sdk.test.ApiCallTest : {"resCode":"1000","resMsg":"账户不存在或被禁用","sign":"f99119594a91157820da74ca53b48ff7","data":null}

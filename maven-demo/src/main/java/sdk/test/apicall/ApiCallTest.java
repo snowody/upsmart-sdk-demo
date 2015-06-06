@@ -1,15 +1,16 @@
-package com.unionpaysmart.apicall;
+package sdk.test.apicall;
+
 import java.util.Date;
 
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import com.alibaba.fastjson.JSON;
 import com.unionpaysmart.data.sdk.api.DataApi;
 import com.unionpaysmart.data.sdk.model.bill.request.BillsCardRequest;
 import com.unionpaysmart.data.sdk.model.bill.response.BillsCardResponse;
 import com.unionpaysmart.data.sdk.model.report.request.QueryNameRequest;
 import com.unionpaysmart.data.sdk.model.report.response.QueryNameResponse;
+import com.unionpaysmart.data.sdk.util.JSONUtil;
 
 /**
  *
@@ -18,7 +19,7 @@ import com.unionpaysmart.data.sdk.model.report.response.QueryNameResponse;
  */
 public class ApiCallTest {
     private static Logger logger = Logger.getLogger(ApiCallTest.class);
-    
+
     /**
      * 初始化参数: 设置account和privateKey
      */
@@ -27,7 +28,7 @@ public class ApiCallTest {
         DataApi.account = "YOUR_ACCOUNT"; // 设置account
         DataApi.privateKey = "YOUR_PRIVATEKEY"; // 设置privateKey
     }
-    
+
     @Test
     public void testQueryName() {
         init();
@@ -36,15 +37,15 @@ public class ApiCallTest {
         queryNameRequest.setMName("中国银联");
         // 调用接口
         QueryNameResponse response = DataApi.callQueryName(queryNameRequest);
-        logger.info(JSON.toJSONString(response));
+        logger.info(JSONUtil.toJson(response));
     }
-    
+
     @Test
     public void testBillsCard() {
         init();
         BillsCardRequest billsCardRequest = new BillsCardRequest();
         billsCardRequest.setBeginDate(new Date(0));
-        String[] cards = {"5201520000009998","5201520000009997"};
+        String[] cards = { "5201520000009998", "5201520000009997" };
         System.out.println(cards);
         billsCardRequest.setCard(cards);
         billsCardRequest.setCid("321045198912121235");
@@ -53,6 +54,6 @@ public class ApiCallTest {
         billsCardRequest.setName("sss");
         billsCardRequest.setType(1);
         BillsCardResponse billsCardResponse = DataApi.callBillsCard(billsCardRequest);
-        logger.info(JSON.toJSONString(billsCardResponse));
+        logger.info(JSONUtil.toJson(billsCardResponse));
     }
 }
