@@ -14,7 +14,7 @@
   <appender name="dailyBebugFile" class="org.apache.log4j.DailyRollingFileAppender">
     <param name="Threshold" value="debug"></param>
     <param name="Append" value="true"></param>
-    <param name="File" value="logs/debug/service_admin_debug.log"></param>
+    <param name="File" value="logs/debug/sdk_demo_debug.log"></param>
     <param name="DatePattern" value="'.'yyyy-MM-dd"></param>
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d %p [%t] %37c %x: %m%n"></param>
@@ -25,7 +25,7 @@
   <appender name="dailyInfoFile" class="org.apache.log4j.DailyRollingFileAppender">
     <param name="Threshold" value="info"></param>
     <param name="Append" value="true"></param>
-    <param name="File" value="logs/info/service_admin_info.log"></param>
+    <param name="File" value="logs/info/sdk_demo_info.log"></param>
     <param name="DatePattern" value="'.'yyyy-MM-dd"></param>
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d %p [%t] %37c %x: %m%n"></param>
@@ -36,7 +36,7 @@
   <appender name="dailyErrorFile" class="org.apache.log4j.DailyRollingFileAppender">
     <param name="Threshold" value="error"></param>
     <param name="Append" value="true"></param>
-    <param name="File" value="logs/error/service_admin_error.log"></param>
+    <param name="File" value="logs/error/sdk_demo_error.log"></param>
     <param name="DatePattern" value="'.'yyyy-MM-dd"></param>
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d %p [%t] %37c %x: %m%n"></param>
